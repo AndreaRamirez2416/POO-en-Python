@@ -28,13 +28,29 @@ class Gato(Animal):
     def cazar_raton(self):
         return (f"{self.nombre} esta cazando un raton")
 
+class Pajaro(Animal):
+    def __init__(self,nombre, color, especie, raza):
+        super().__init__(nombre, color, especie)
+        self.raza=raza
+    def hacer_sonido(self):
+        return ("pio pio")
+    def volar(self):
+        return (f"{self.nombre} esta volando")
+    def cantar(self):
+        return (f"{self.nombre} esta cantando")
+
 Animal1=Perro("Firulais", "marron", "perro", "labrador")
 Animal2=Gato("Michi", "blanco", "gato", "siames")
+Animal3=Pajaro("Piolin", "amarillo", "pajaro", "canario")
 
 print(Animal1.presentarse())
-print(Animal2.presentarse())
 print(Animal1.hacer_sonido())
-print(Animal2.hacer_sonido())
 print(Animal1.buscar_pelota())
+print(Animal2.presentarse())
+print(Animal2.hacer_sonido())
 print(Animal2.trepar_arbol())
 print(Animal2.cazar_raton())
+print(Animal3.presentarse())
+print(Animal3.hacer_sonido())
+print(Animal3.volar())
+print(Animal3.cantar())
