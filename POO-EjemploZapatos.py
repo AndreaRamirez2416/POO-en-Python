@@ -18,3 +18,5 @@ Botines = Zapatos("Botines", "Nike", 42, "Negro")
 Botines.mostrar_informacion()
 Botines.disponibilidad()
 Botines.visibilidad()
+
+print(id(Botines))
