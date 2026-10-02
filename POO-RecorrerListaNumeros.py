@@ -22,3 +22,4 @@ for _ in range(cantidad):
 
 datos.recorrer_numeros()
 datos.mostrar()
+
