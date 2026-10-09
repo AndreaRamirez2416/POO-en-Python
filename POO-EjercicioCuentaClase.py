@@ -49,8 +49,12 @@ class CuentaCorriente(Cuenta):
     def consultar_saldo(self):
         print("Saldo actual: ", self.Saldo)
 
-    def calcular_intereses(self):
-        return self.Saldo * self.Intereses
+    def calcular_sobregiro(self):
+        if self.Saldo < 0:
+            return abs(self.Saldo) * 0.1
+        else:
+            return 0
+
 
 cuenta1 = CuentaNomina("123456789", 1000, 0.05)
 cuenta1.consultar_saldo()
