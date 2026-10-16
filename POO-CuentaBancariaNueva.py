@@ -62,6 +62,20 @@ class CuentaBancaria(ABC):
         """Metodo que retorna el historial de transacciones de la cuenta"""
         return self._historial.copy()
 
+
+
+    def sumar(self, a,b):
+        """Metodo que suma dos numeros"""
+        return a + b
+
+    def sumar(self, a,b,c=0):
+        """Metodo que suma tres numeros"""
+        return a + b + c
+
+cta=CuentaBancaria("12345", "Juan Perez", 1000)
+cta.sumar(1,2,5)
+
+
     
     
    
