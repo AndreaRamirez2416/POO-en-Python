@@ -8,7 +8,7 @@ classDiagram
 
     class NotificadorUsuario {
         +emisor = ServicioEmail
-        +ejecutar_pago(monto: float)
+        +notificar = (mensaje: str, destino: str)
     }
 
     %% Dependencia directa y clases aisladas
